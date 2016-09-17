@@ -9,8 +9,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.digitalsquad.thoth.Home">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/mainlist"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginBottom="80dp">
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/textsend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <EditText
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/send"/>
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:src="@drawable/send"
+            android:layout_alignBottom="@+id/chat"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+
 </RelativeLayout>
