@@ -42,7 +42,8 @@
             android:src="@drawable/send"
             android:layout_alignBottom="@+id/chat"
             android:layout_alignParentRight="true"
-            android:scaleType="fitCenter"/>
+            android:scaleType="fitCenter"
+            android:onClick="sendonclick"/>
 
     </RelativeLayout>
 
